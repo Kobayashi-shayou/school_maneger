@@ -18,8 +18,8 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//User
+Route::get('/user/home', [App\Http\Controllers\StudyController::class, 'home'])->name('user.home');
 //Admin
 Route::get('/admin/top', [App\Http\Controllers\Admin\AdminController::class, 'top'])->name('admin.top');
 Route::get('/admin/form', [App\Http\Controllers\Admin\FormController::class, 'form'])->name('admin.form.index');
