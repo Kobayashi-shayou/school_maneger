@@ -7,7 +7,7 @@
 <div class="panel-heading"><h3>勉強会入力フォーム</h3></div>
 
 <div class="panel-body">
-<form class="form-horizontal" method="POST" action="{{ route('admin.form.store') }}">
+<form class="form-horizontal" method="POST" action="{{ route('admin.form.index') }}">
 {{ csrf_field() }}
 
 <!--タイトル-->
@@ -39,13 +39,13 @@
 </div>
 
 <!--インストラクター-->
-<div class="form-group{{ $errors->has('instructor_id') ? ' has-error' : '' }}">
-<label for="instructor_id" class="col-md-4 control-label">インストラクター</label>
+<div class="form-group{{ $errors->has('instructor') ? ' has-error' : '' }}">
+<label for="instructor" class="col-md-4 control-label">インストラクター</label>
 <div class="col-md-6">
-<input id="instructor_id" type="text" class="form-control" name="instructor_id" value="{{ old('instructor_id') }}" required>
-@if ($errors->has('instructor_id'))
+<input id="instructor" type="instructor" class="form-control" name="instructor" value="{{ old('instructor') }}" required>
+@if ($errors->has('instructor'))
 <span class="help-block">
-<strong>{{ $errors->first('instructor_id') }}</strong>
+<strong>{{ $errors->first('instructor') }}</strong>
 </span>
 @endif
 </div>
