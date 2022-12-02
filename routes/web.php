@@ -22,3 +22,4 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 //Admin
 Route::get('/admin/top', [App\Http\Controllers\Admin\AdminController::class, 'top'])->name('admin.top');
+Route::get('/admin/form', [App\Http\Controllers\Admin\FormController::class, 'form'])->name('admin.form.index');
