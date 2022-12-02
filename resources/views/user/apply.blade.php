@@ -42,10 +42,11 @@
 <br>
 </div>
 </div>
+<input type="hidden" name="study_id" value="{{ $study->id }}">
+<button type="submit" class="btn btn-primary">次へ</button>
 </form>
 
 <br>
-<a href="{{ route('user.apply', $study->id) }}" class="btn btn-primary btn-sm">次へ</a>
 <br>
 <br>
 

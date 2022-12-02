@@ -27,3 +27,12 @@ Route::post('/user/confirm', [App\Http\Controllers\StudyController::class, 'conf
 Route::get('/admin/top', [App\Http\Controllers\Admin\AdminController::class, 'top'])->name('admin.top');
 Route::get('/admin/form', [App\Http\Controllers\Admin\FormController::class, 'form'])->name('admin.form.index');
 Route::post('/admin/form/store', [App\Http\Controllers\Admin\FormController::class, 'store'])->name('admin.form.store');
+
+//PAYJP
+/*
+Route::get('/user/payment', [App\Http\Controllers\PaymentController::class, 'index'])->name('user.payment');
+Route::post('/user/payment', [App\Http\Controllers\PaymentController::class, 'index'])->name('user.payment');
+Route::post('/user/payment', [App\Http\Controllers\PaymentController::class, 'payment']);
+*/
+Route::post('/user/index', [App\Http\Controllers\PaymentController::class, 'index'])->name('user.index');
+Route::post('/user/payment/aaa', [App\Http\Controllers\PaymentController::class, 'payment'])->name('user.payment.aaa');
