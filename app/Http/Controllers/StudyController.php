@@ -18,4 +18,16 @@ class StudyController extends Controller
         $study = Study::find($id);
 		return view('user.course', compact('study'));
 	}
+
+    public function apply($id)
+    {
+        $study = Study::find($id);
+		return view('user.apply', compact('study'));
+	}
+
+    public function confirm($id)
+    {
+        $study = Study::find($id);
+		return view('user.course', compact('study'));
+	}
 }

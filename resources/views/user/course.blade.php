@@ -21,7 +21,7 @@
 <td>{{ $study->title }}</td>
 <td>{{ $study->body }}</td>
 <td>{{ $study->instructor_id }}</td>
-<td><a href="{{ route('user.course', $study->id) }}" class="btn btn-primary btn-sm">申し込み</a></td>
+<td><a href="{{ route('user.apply', $study->id) }}" class="btn btn-primary btn-sm">申し込み</a></td>
 </tr>
 </tbody>
 </table>
