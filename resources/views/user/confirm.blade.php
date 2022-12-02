@@ -30,7 +30,16 @@
 
 
 <br>
-<a href="{{ route('user.confirm', $study->id) }}" class="btn btn-primary btn-sm">決定</a>
+
+
+<form method="POST" name="a_form" action="{{ route('user.index') }}">
+@csrf
+<input type="hidden" name="study_id" value="{{ $study->id }}">
+<input type="hidden" name="price" value="{{ $price }}">
+<button type="submit" class="btn btn-primary btn-sm">送信する</button>
+</form>
+
+
 <br>
 <br>
 
