@@ -19,5 +19,13 @@ class InstructorSeeder extends Seeder
             'name' => '田中太郎',
             'introduction' => 'PHP強強です'
         ]);
+ 	Instructor::create([
+            'name' => '中山千歳',
+            'introduction' => 'HTML/CSSが得意です'
+        ]);
+	Instructor::create([
+            'name' => '松田優作',
+            'introduction' => 'Laravelマスターです'
+        ]);
     }
 }
